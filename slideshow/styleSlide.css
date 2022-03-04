@@ -25,10 +25,23 @@
       text-align: center;
   }
 
+  /* Efeito piscando */
   h1{
     font-family: 'Atma', cursive; 
     font-size: 50px
   }
+
+ h1::after{
+     content: "";
+     position: relative;
+     border-right: 4px solid red;
+     animation: piscar 500ms linear infinite;
+ }
+
+ @keyframes piscar{
+     from{opacity: 0;}
+     to{opacity: 1;}
+ }
 
   nav{
       text-align: center;

@@ -1,3 +1,14 @@
+const msg = "Paula Bruno Developer!";
+let titulo = document.querySelector('.titulo');
+for (let i=0; i< msg.length; i++) {
+    (function(pos){
+        setTimeout(function(){
+           titulo.innerHTML += msg.charAt(pos);
+        },300*pos);
+    })(i);
+};
+
+
 const display = document.querySelector(".display"); //seleciona os mesmos seletores do css
 
 const teclasNumeros = document.querySelectorAll("[id*=tecla]"); // o * anterior seleciona todas as divs que contem o termo TECLA
