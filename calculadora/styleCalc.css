@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@700&family=Dancing+Script&display=swap');
+
+
+:root{
+    --primary: #29B9F2;
+    --secundary: #F2CB05;
+    --terciary: #F25835;
+    --fundo: #22A2F2;
+    --forLinks: #F28705; 
+  }
+
+  body{
+      background-color: var(--fundo);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 10px;
+      
+  }
+
+  header{
+     font-family: monospace;
+      background-color: var(--secundary);
+      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+  h1{
+    font-family: 'Atma', cursive; 
+    font-size: 50px
+  }
+
+  nav{
+      text-align: center;
+      font-size: 20px;
+      margin: auto;
+  }
+
+  section{
+    height: 50vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--terciary);
+    margin: auto;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+  /*A partir daqui é o projeto*/
+  .calculadora{
+    width: 300px;
+    height: 380px;
+    padding: 20px;
+    padding-bottom: 50px;  /* margim interna*/
+    margin: auto;
+   
+    background-color: var(--primaria);
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px #000000FF; /* Não precisa separar por vírgulas, apenas espaços - Para colocar transparência insere dois últimos dígitos*/
+}
+
+.nameCalc{
+    background-color: var(--secundary);
+    border-radius: 20px;
+    
+}
+
+.display{
+    width: 90%;
+    height: 40px;
+    padding: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px #000000FF;
+
+}
+
+button{ 
+    width: 45px; 
+    height: 45px;
+
+    background-color: #fff;
+    border-radius: 50%; /* para colocar redondo coloca 50% do valor da altura e largura*/
+    font-size: 26px;
+    border: none;
+    cursor: pointer;  /* quando passa o cursor aparece mãozinha*/
+    transition: 0.4s; /* troca de transição do hover*/
+    
+    }
+
+    button:hover{  /* quando passa o mouse atribui essas mudanças*/
+        background-color: black;
+        color: white;
+    }
+
+    .conteiner-botoes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;    /* separou os botões em colunas*/
+        gap: 10px; /* separou os botões*/
+        justify-items: center;
+    }
+
+    .historico{
+        height: 600px;
+        margin-left: 10px;
+    }
+
+    

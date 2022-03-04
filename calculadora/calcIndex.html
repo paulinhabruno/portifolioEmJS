@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Calculadora/styleCalc.css">
+    <script defer src="./scriptCalc.js"></script>
 </head>
 <body>
     <header>
@@ -13,6 +14,7 @@
 
       <nav>
           <a href="../index.html">Home</a>
+          <a href="../JogoDaVelha/jdv-index.html">Jogo da Velha</a>
           <a href="./calcIndex.html">Calculadora</a>
           <a href="../urna/indexUrna.html">Urna</a>
           <a href="../slideshow/indexSlide.html">SlideShow</a>
@@ -21,10 +23,39 @@
     </header>
 
     <section>
-        <p>
-            EM CONSTRUÇÃO
-        </p>
-        <img src="../imgIndex/under-construction-g8f0ec068d_640.png" width= "30%" alt="emconstrução" >
+        
+            <div class="calculadora"> 
+            <div class="nameCalc">
+               <p>CALCULADORA</p> 
+            </div>
+            <div class="display"></div>
+            <div class="conteiner-botoes">
+                <button id="limparDisplay">CE</button>
+                <button id="limparCalculo">C</button>
+                <button id="backspace">«</button>
+                <button id="operadorDividir">/</button>
+                <button id="tecla7">7</button>
+                <button id="tecla8">8</button>
+                <button id="tecla9">9</button>
+                <button id="operadorMultiplicar">*</button>
+                <button id="tecla4">4</button>
+                <button id="tecla5">5</button>
+                <button id="tecla6">6</button>
+                <button id="operadorSubtrair">-</button>
+                <button id="tecla1">1</button>
+                <button id="tecla2">2</button>
+                <button id="tecla3">3</button>
+                <button id="operadorAdicionar">+</button>
+                <button id="inverter">±</button>
+                <button id="tecla0">0</button>
+                <button id="decimal">,</button>
+                <button id="igual">=</button>                                   
+            </div>
+            
+           
+          </div>
+        
+       
     </section>
 </body>
 </html>
