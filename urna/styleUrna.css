@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@700&family=Dancing+Script&display=swap');
 
+@keyframes pisca{
+    0% { opacity: 0.2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2}
+}
 
 :root{
     --primary: #29B9F2;
@@ -163,15 +168,38 @@
     font-size: 20px;
 }
 
+.pisca{
+    animation: pisca 1s  infinite ;
+}
+
   .d-1-4{
       flex: 1;
       line-height: 30px;
   }
 
-  .d-1.right{
+  .d-1-right{
       width: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
   }
 
+  .d-1-image{
+      border: 1px solid black;
+      background-color: white;
+      text-align: center;
+      font-size: 18px;
+  }
+  .d-1-image img {
+      width: 100%;
+     
+  }
+
+  .small{
+      width: 90%;
+      font-size: 10px;
+      
+  }
   .d-2{
       height: 60px;
       font-size: 13px;
