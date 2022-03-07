@@ -7,3 +7,4 @@ for (let i=0; i< msg.length; i++) {
         },300*pos);
     })(i);
 };
+

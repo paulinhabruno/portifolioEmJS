@@ -49,12 +49,132 @@
   }
 
   section{
-      height: 50vw;
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: var(--terciary);
-      margin: auto;
-      margin-left:auto;
-      margin-right: auto;
+     height: 33vw;
+     margin-top: 20px;
+     padding-top: 0px;
+     background-color: var(--terciary);
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .urna{
+    background-color: rgb(209, 207, 207);
+    padding: 30px;
+    display: flex;
+    box-shadow: 5px 5px 0px #737374bd; 
+    font-family: arial,sans-serif;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #c1c1c1) ;
+    border: 2px solid #070707;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    }
+    
+    .teclado{
+        background-color: rgb(85, 84, 84);
+        margin-left: 30px;
+  }
+
+  .teclado--linha{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+  }
+  .teclado--botao{
+      width: 70px;
+      height: 40px;
+      background-color: black;
+      font-size: 25px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px 0px #a4a4a5bd;
+  }
+
+  .botao--branco{
+      background-color: white;
+      color: black;
+      font-size:15px;
+  }
+
+  .botao--corrige{
+      background-color: var(--secundary);
+      color: black;
+      font-size: 15px;
+
+  }
+
+  .botao--confirma{
+    background-color: rgb(3, 156, 85);
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+
+  }
+
+  .d-1{
+    flex: 1;
+    display: flex;
+  }
+
+  .d-1-left{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+  }
+
+  .d-1-1{
+      height: 50px;     
+      display: flex;
+      align-items: center;
+  }
+
+  .d-1-2 {
+      height: 50px;     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .d-1-3{
+      height: 50px; 
+    }
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+  .d-1-4{
+      flex: 1;
+      line-height: 30px;
+  }
+
+  .d-1.right{
+      width: 90px;
+  }
+
+  .d-2{
+      height: 60px;
+      font-size: 13px;
+      border-top: 2px solid black;
+      
   }
