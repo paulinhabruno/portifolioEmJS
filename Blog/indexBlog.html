@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="./styleBlog.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script defer src="./scriptBlog.js"></script>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <h1 class = "titulo"></h1>  
+        </div>
+
+      <nav>
+          <a href="../index.html">Home</a>
+          <a href="../JogoDaVelha/jdv-index.html">Jogo da Velha</a>
+          <a href="../calculadora/calcIndex.html">Calculadora</a>
+          <a href="../urna/indexUrna.html">Urna</a>
+          <a href="../slideshow/indexSlide.html">SlideShow</a>
+          <a href="../Blog/indexBlog.html">Blog Exemplo</a>
+          <a href="../validadorForm/indexValida.html">Form</a>
+      </nav>
+    </header>
+
+    <!-- A partir daqui entra o código -->
+  
+    <section>
+        
+        <article>
+            <div class="header"></div>
+            <div class="slider">
+                <div class="slider--controls">
+                    <div class="slider--control" onclick="goPrev()"></div>
+                    <div class="slider--control" onclick="goNext()"></div>
+                </div>
+                <div class="slider--width">
+                    <div class="slider--item" style="background-image: url('img/img01.jpg')">
+                        Aproveite o seu dia...
+                    </div>
+                    <div class="slider--item" style="background-image: url('img/img02.jpg')">
+                        A vida é curta...
+                    </div>
+                    <div class="slider--item" style="background-image: url('img/img03.jpg')">
+                        Mas você vale a pena.
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <div>
+            Seja bem vindo ao Blog da Paula Bruno Developer!
+        </div>
+
+        <div class="noticias">
+
+            <div class="noticia1">
+
+                <h3>Novidades da Semana</h3>
+
+                <p>
+                    Essa semana estamos atualizando o novo portifólio de estudo.
+                </p>
+
+            </div>
+            <div class="noticia2">
+                <h3>Atualizações</h3>
+                <p>
+                    Em breve teremos um novo projeto no ar. <br>
+                    Aguarde!
+                </p>
+            </div>
+            <div class="noticia3">
+                <h3>Fique por dentro...</h3>
+                <p>
+                    Vários bootcamps estão abrindo! <br>
+                    Em breve, novidades!
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+</html>

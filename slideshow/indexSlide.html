@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlideShow</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleSlide.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script defer src="./scriptSlide.js"></script>
 </head>
 <body>
@@ -20,15 +21,33 @@
           <a href="../calculadora/calcIndex.html">Calculadora</a>
           <a href="../urna/indexUrna.html">Urna</a>
           <a href="./indexSlide.html">SlideShow</a>
+          <a href="../Blog/indexBlog.html">Blog Exemplo</a>
           <a href="../validadorForm/indexValida.html">Form</a>
       </nav>
     </header>
 
-    <section>
-        <p>
-            EM CONSTRUÇÃO
-        </p>
-        <img src="../imgIndex/under-construction-g8f0ec068d_640.png" width= "30%" alt="emconstrução" >
-    </section>
+    <!-- A partir daqui entra o código -->
+    <article>
+        <div class="header"></div>
+        <div class="slider">
+            <div class="slider--controls">
+                <div class="slider--control" onclick="goPrev()"></div>
+                <div class="slider--control" onclick="goNext()"></div>
+            </div>
+            <div class="slider--width">
+                <div class="slider--item" style="background-image: url('img/img01.jpg')">
+                    Aproveite o seu dia...
+                </div>
+                <div class="slider--item" style="background-image: url('img/img02.jpg')">
+                    A vida é curta...
+                </div>
+                <div class="slider--item" style="background-image: url('img/img03.jpg')">
+                    Mas você vale a pena.
+                </div>
+            </div>
+    
+        </div>
+  
+    </article>
 </body>
 </html>

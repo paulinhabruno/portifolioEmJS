@@ -61,11 +61,9 @@ p{
     float: left; 
     margin-right: 10px;
     font-size: 18px;
-    font-style: bold;
-    
+    font-style: bold;  
   }
-  
-  
+   
   section{
     height: 50vw;
     padding-left: 20px;
@@ -81,11 +79,11 @@ p{
 /** A partir daqui entra o código **/
  
 article{
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+   align-items: center;
 }
 
 
@@ -98,7 +96,8 @@ article{
     
 }
 .slider{
-    flex: 1;
+    width: 700px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -125,7 +124,6 @@ article{
 .slider--controls{
     position: absolute;
     z-index: 99;
-    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,5 +139,38 @@ article{
     cursor: pointer;
 }
 
+.noticias{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.noticia1{
+    width: 60vh;
+    padding: 5px;
+    text-align: justify;
+    background-color: rgba(238, 235, 235, 0.651);
+}
+
+.noticia2{
+    width: 60vh;
+    padding: 5px;
+    text-align: justify;
+    background-color: rgba(238, 235, 235, 0.651);
+}
+
+.noticia3{
+    width: 60vh;
+    padding: 5px;
+    text-align: justify;
+    background-color: rgba(238, 235, 235, 0.651);
+}
 
  

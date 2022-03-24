@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form de Validação</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styleValidaForm.css">
     <script defer src="./scriptValidForm.js"></script>
 </head>
 <body>
@@ -20,15 +20,48 @@
           <a href="../calculadora/calcIndex.html">Calculadora</a>
           <a href="../urna/indexUrna.html">Urna</a>
           <a href="../slideshow/indexSlide.html">SlideShow</a>
+          <a href="../Blog/indexBlog.html">Blog Exemplo</a>
           <a href="./indexValida.html">Form</a>
       </nav>
     </header>
-
+ <!-- A partir daqui entra o código -->
     <section>      
-        <p>
-            EM CONSTRUÇÃO
-        </p>
-        <img src="../imgIndex/under-construction-g8f0ec068d_640.png" width= "30%" alt="emconstrução" >
+        
+        <div class = "screen">
+            <div class = "leftside">
+                <img src = "img/financial2.png" alt = "Financial"/>
+            </div>
+
+            <div class="rightside">
+                    <h2>Crie a sua conta!</h2>
+
+                    <form method = "POST" action = "cadastro.php" class = "b7validator">
+                        <label>
+                            Seu nome:<br/>
+                            <input type="text" name="name" data-rules="required|min=2"/> 
+                        </label>
+
+                        <label>
+                            Seu e-mail: <br/>
+                            <input type="text" name="e-mail" data-rules="required|email"> 
+                        </label>
+
+                        <label>
+                            Sua senha: <br/>
+                            <input type="password" name="password" data-rules="required|min=4"/> 
+                        </label>
+                        <label>
+                            <input type="submit" value="Cadastrar"> 
+                        </label> 
+                    </form>
+                    
+                    <div>
+                        Já tem uma conta?   <a href="">Faça o login.</a>
+                    </div>
+
+            </div>
+
+        </div>
     </section>
 </body>
 </html>

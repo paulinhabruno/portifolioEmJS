@@ -50,6 +50,7 @@
 
   section{
       height: 50vw;
+      padding-top: 10px;
       padding-left: 20px;
       padding-right: 20px;
       background-color: var(--terciary);
@@ -57,4 +58,51 @@
       margin-left:auto;
       margin-right: auto;
       text-align: center;
+      box-sizing: border-box;
+  }
+
+  .screen{
+      display: flex;
+      height: 80vh;
+  }
+
+  .leftside{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftside img{
+      max-width: 500px;
+      height: auto;
+  }
+
+  .rightside{
+    width: 400px;
+    background-color: rgba(194, 192, 192, 0.534);
+    padding: 20px;
+  }
+
+  .rightside label {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .rightside input{
+      width: 80%;
+      border: 1px solid #999;
+      border-radius: 5px;
+      padding: 8px;
+      font-size: 14px;
+      outline: 0;
+  }
+
+  .error{
+      font-size: 11px;
+      background-color: rgb(250, 6, 6);
+      color: white;
+      padding: 4px;
+      border-radius: 5px;
+
   }
